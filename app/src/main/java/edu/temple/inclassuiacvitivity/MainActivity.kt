@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         /* Step 2: Create adapter to display items from array in Spinner */
         //spinner.adapter = ArrayAdapter...
-
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, numberArray)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
 
         // Step 3: Change TextView's text size to the number selected in the Spinner */
         //spinner.onItemSelectedListener = object: ...
