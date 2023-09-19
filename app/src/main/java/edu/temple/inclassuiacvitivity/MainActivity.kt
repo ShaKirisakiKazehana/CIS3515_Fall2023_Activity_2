@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         /* Step 1: Populate this array */
         //val numberArray = Array Of Numbers
+        val numberArray = Array<Int>(100) {it * 1}
 
         /* Step 2: Create adapter to display items from array in Spinner */
         //spinner.adapter = ArrayAdapter...
